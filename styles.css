@@ -1,0 +1,131 @@
+:root {
+    /*=-=-=- CORES =-=-=-*/
+    --color-dark-purple-gray: #4E4958;
+    --color-dark-gray-blue: #535971;
+    --color-medium-pink: #FF5374;
+    --color-medium-dark-gray: #C1BCCC;
+    --color-medium-gray: #E5E5E5;
+    --color-medium-light-gray: #E6E6F0;
+    --color-light-gray: #FAFAFC;
+    --color-off-white: #EFEFEF;
+    /*=-=-=- =-=-=-*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-off-white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 400;
+}
+
+body::before {
+    content: '';
+    background: var(--color-dark-gray-blue);
+    width: 100%;
+    height: 436px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+h1,
+legend {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+}
+
+header {
+    color: white;
+    margin-top: 140px;
+}
+
+header p {
+    max-width: 417px;
+    margin-top: 18px;
+}
+
+header h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+form {
+    background: white;
+    margin-top: 58px;
+    padding: 64px;
+    border-radius: 20px;
+}
+
+fieldset {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset legend {
+    color: var(--color-dark-gray-blue);
+    font-size: 24px;
+    line-height: 34px;
+    width: 100%;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-medium-light-gray);
+}
+
+fieldset label {
+    font-size: 14px;
+    color: var(--color-dark-purple-gray);
+}
+
+label span {
+    font-size: 12px;
+    color: var(--color-medium-dark-gray);
+    margin-left: 10px;
+}
+
+label span:hover {
+    color: var(--color-dark-purple-gray);
+}
+
+.input-wrapper input {
+    background: var(--color-light-gray);
+    color: var(--color-dark-gray-blue);
+    height: 56px;
+    border: 1px solid var(--color-medium-light-gray);
+    border-radius: 8px; 
+    padding: 0 24px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 input {
+    width: 300px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
