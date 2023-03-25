@@ -20,7 +20,7 @@
         </header>
         <main>
             <form id="form-mentoring" action="">
-                <fieldset>
+                <fieldset id="personal-info">
                     <legend>
                         INFORMAÇÕES PESSOAIS
                     </legend>
@@ -40,21 +40,83 @@
                     </div>
                     <div class="input-wrapper">
                         <label for="info-email">
-                            Sobrenome <span>(digite um email válido)</span>
+                            Email <span>(digite um email válido)</span>
                         </label>
                         <input id="info-email" type="email" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="info-password">
-                            Sobrenome <span>(digite um email válido)</span>
+                            Senha <span>(mínimo de 6 caracteres)</span>
                         </label>
                         <input id="info-password" type="password" required>
+                    </div>
+                </fieldset>
+                <fieldset id="mentor-info">
+                    <legend>
+                        INFORMAÇÕES DO MENTOR
+                    </legend>
+                    <div class="input-wrapper">
+                        <label for="mentor-name">
+                            Nome do seu mentor <span>(só o primeiro nome)</span>
+                        </label>
+                        <input id="mentor-name" type="text" required>
+                    </div>
+                </fieldset>
+                <fieldset id="time-info">  
+                    <legend>
+                        SEUS HORÁRIOS DISPONÍVEIS
+                    </legend>
+                    <h2>PRIMEIRA MENTORIA</h2>
+                    <div class="fieldset-wrapper">
+                        <div class="input-wrapper">
+                            <label for="first-time-info-data">
+                                Data <span>(DD/MM/AAA)</span>
+                            </label>
+                            <input id="first-time-info-data" class="time-info-date" type="date" required>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="first-time-begin">
+                                    Das
+                                </label>
+                                <input id="first-time-begin"  class="time-info-times" type="time" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="first-time-end">
+                                    Até
+                                </label>
+                                <input id="first-time-end" class="time-info-times" type="time" required>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>SEGUNDA MENTORIA</h2>
+                    <div class="fieldset-wrapper">
+                        <div class="input-wrapper">
+                            <label for="last-time-info-data">
+                                Data <span>(DD/MM/AAA)</span>
+                            </label>
+                            <input id="last-time-info-data" class="time-info-date" type="date">
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="last-time-begin">
+                                    Das
+                                </label>
+                                <input id="last-time-begin"  class="time-info-times" type="time">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="last-time-end">
+                                    Até
+                                </label>
+                                <input id="last-time-end" class="time-info-times" type="time">
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>
         </main>
         <footer>
-    
+            <input id="form-mentoring-submit" form="form-mentoring" type="submit" value="SALVAR">
         </footer>
     </div>
 </body>
